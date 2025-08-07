@@ -34,26 +34,26 @@ htmlcov/
 
 # -------- Next.js --------
 # Node modules
-nextjs/node_modules/
+frontend-taskcrm/node_modules/
 
 # Next.js build output
-nextjs/.next/
-nextjs/out/
+frontend-taskcrm/.next/
+frontend-taskcrm/out/
 
 # Environment variables
-nextjs/.env*
-nextjs/.env.local
-nextjs/.env.development.local
-nextjs/.env.test.local
-nextjs/.env.production.local
+frontend-taskcrm/.env*
+frontend-taskcrm/.env.local
+frontend-taskcrm/.env.development.local
+frontend-taskcrm/.env.test.local
+frontend-taskcrm/.env.production.local
 
 # Logs
-nextjs/npm-debug.log*
-nextjs/yarn-debug.log*
-nextjs/yarn-error.log*
+frontend-taskcrm/npm-debug.log*
+frontend-taskcrm/yarn-debug.log*
+frontend-taskcrm/yarn-error.log*
 
-# VSCode settings (if inside nextjs folder)
-nextjs/.vscode/
+# VSCode settings (if inside frontend-taskcrm folder)
+frontend-taskcrm/.vscode/
 
 # Mac OS
 .DS_Store
