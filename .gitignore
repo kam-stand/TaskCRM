@@ -1,0 +1,62 @@
+# -------- Django --------
+# Python cache files
+**/__pycache__/
+**/*.py[cod]
+*.so
+
+# Django migration files (optional to ignore, but recommended if you want to generate them fresh)
+**/migrations/
+
+# Environment variables
+*.env
+
+# Virtual environments (assuming you keep venv inside django folder)
+django/venv/
+django/env/
+
+# Database files (SQLite - ignore if you use Postgres, but just in case)
+*.sqlite3
+
+# Django static and media files
+django/staticfiles/
+django/media/
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# -------- Next.js --------
+# Node modules
+nextjs/node_modules/
+
+# Next.js build output
+nextjs/.next/
+nextjs/out/
+
+# Environment variables
+nextjs/.env*
+nextjs/.env.local
+nextjs/.env.development.local
+nextjs/.env.test.local
+nextjs/.env.production.local
+
+# Logs
+nextjs/npm-debug.log*
+nextjs/yarn-debug.log*
+nextjs/yarn-error.log*
+
+# VSCode settings (if inside nextjs folder)
+nextjs/.vscode/
+
+# Mac OS
+.DS_Store
+
+# Misc
+*.log

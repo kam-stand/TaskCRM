@@ -29,7 +29,7 @@ def signup(request):
         return JsonResponse({'error': 'Username already exists'}, status=400)
 
     User.objects.create_user(username=username, email=email, password=password)
-    return JsonResponse({'message': 'User created successfully'}, status=201)
+    return JsonResponse({'message': 'User created successfully', }, status=201)
 
 
 @csrf_exempt
