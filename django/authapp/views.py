@@ -28,8 +28,12 @@ def signup(request):
     if User.objects.filter(username=username).exists():
         return JsonResponse({'error': 'Username already exists'}, status=400)
 
-    User.objects.create_user(username=username, email=email, password=password)
-    return JsonResponse({'message': 'User created successfully', }, status=201)
+    user = User.objects.create_user(username=username, email=email, password=password)
+    return JsonResponse(
+        {'message': 'User created successfully',
+        'user_id': user.id,
+        'username': user.username }, 
+        status=201)
 
 
 @csrf_exempt
@@ -52,4 +56,4 @@ def login_view(request):
         return JsonResponse({'error': 'Invalid credentials'}, status=401)
 
     login(request, user)  # sets session cookie
-    return JsonResponse({'message': 'Logged in successfully'}, status=200)
+    return JsonResponse({'message': 'Logged in successfully', 'user_id': user.id}, status=200)
