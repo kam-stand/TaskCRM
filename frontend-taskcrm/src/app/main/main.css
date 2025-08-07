@@ -1,0 +1,169 @@
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  background-color: #0d0d0d; /* dark background */
+  color: #ffffff; /* white text */
+  font-family: 'Inter', sans-serif;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #a0a0a0;
+  margin-bottom: 2rem;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid white;
+    margin: 10px;
+    padding: 10px;
+    width: max-content;
+}
+
+.main-nav  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+
+.main-nav :hover{
+    cursor: pointer;
+    background-color: lightgray;
+    color: black;
+}
+
+.main-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.main-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.profile{
+    border-right: 1px solid #ffffff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width: 100px;
+    height: 70px;
+}
+
+.profile-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+    height: 40px;
+    width: 350px;
+}
+.profile-nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    margin: 5px;
+}
+
+.profile-nav div:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    color: black;
+}
+
+.main-settings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    border: 1px solid white;
+    width: 900px;
+    height: 1000px;
+    margin: 10px;
+}
+
+.main-attributes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+    border: 1px solid white;
+    height: 220px;
+    width: 100px;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.main-attributes div{
+    margin: 5px;
+    padding: 5px;
+    height: 40px;
+    width: 80px;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes bounceUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.main-attributes div:hover {
+  animation: bounceUp 0.4s ease forwards;
+  background-color: #d3d3d3; /* lightgray */
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.6); /* white accents glow */
+  cursor: pointer; /* optional, shows it's clickable */
+}
+
+
+.main-view {
+    border: 1px solid white;
+    height: 600px;
+    width: 700px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
